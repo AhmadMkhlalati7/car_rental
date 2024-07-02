@@ -65,8 +65,8 @@
 	var carousel = function() {
 		$('.carousel-car').owlCarousel({
 			center: true,
-			loop: true,
-			autoplay: true,
+			loop: false,
+			autoplay: false,
 			items:1,
 			margin: 30,
 			stagePadding: 0,

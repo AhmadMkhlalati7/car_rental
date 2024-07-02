@@ -8378,7 +8378,7 @@ h1, h2, h3, h4, h5,
   height: 850px; }
   @media (max-width: 991.98px) {
     .slider-text {
-      height: 1150px; } }
+      height: 640px; } }
   .slider-text h1 {
     font-size: 44px;
     color: #fff;
@@ -8688,13 +8688,20 @@ h1, h2, h3, h4, h5,
   margin-bottom: 40px;
   -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
-  box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
-  background: #fff; }
+  box-shadow: 0 0 4px #c7c7c7;
+    background: #fff;
+    border: 1px solid transparent!important;
+
+ }
+ .car-wrap:hover{
+  border: 1px solid #FF9F66!important;
+
+ }
   .car-wrap .img {
     width: 100%;
     height: 220px; }
   .car-wrap .text {
-    border: 1px solid #FF9F66;    padding: 20px 30px 30px; }
+        padding: 20px 30px 30px; }
     .car-wrap .text .price {
       color: #002379;
       margin-bottom: 0;
@@ -9053,7 +9060,7 @@ h1, h2, h3, h4, h5,
 
 .ftco-degree-bg {
   position: relative; }
-  .ftco-degree-bg:after {
+  /* .ftco-degree-bg:after {
     content: '';
     position: absolute;
     left: 0;
@@ -9067,7 +9074,7 @@ h1, h2, h3, h4, h5,
     -ms-transform: skewY(-4deg);
     -o-transform: skewY(-4deg);
     transform: skewY(-4deg);
-    background-color: #f8f9fa; }
+    background-color: #f8f9fa; } */
 
 .aside-stretch {
   background: #43a2ff; }
@@ -9945,3 +9952,53 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+    .position-relative {
+      position: relative;
+  }
+  .overlay-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: 1;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+  }
+  .overlay-image:hover {
+      transform: translateX(-10px);
+  }
+
+
+
+
+  /* hero */
+
+
+  .hero-wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity as needed */
+    z-index: 1;
+  }
